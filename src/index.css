@@ -11,3 +11,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+div.question {
+  list-style-type: none;
+  counter-reset: css-counter 0;
+}
+
+div.answer {
+  counter-increment: css-counter 1;
+}
+
+div.answer:before {
+  content: counter(css-counter) ". ";
+}
+
+.bordered {
+  border: 1px solid black;
+}
