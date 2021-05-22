@@ -2,6 +2,12 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Installations - npm install ...
+node-sass@4.14.1
+react-bootstrap bootstrap@4.6.0
+@material-ui/core
+@fontsource/roboto
+
 ## Available Scripts
 
 In the project directory, you can run:
