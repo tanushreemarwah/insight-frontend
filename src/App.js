@@ -7,6 +7,7 @@ import Notes from "./pages/notes";
 import { Navbar, Nav, NavLink, Breadcrumb } from 'react-bootstrap';
 import "bootstrap/dist/css/bootstrap.min.css";
 import './css/header.scss';
+import { Login } from "./pages/Login";
 
 class App extends Component {
   render () {
@@ -19,6 +20,7 @@ class App extends Component {
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className='mr-auto'>
                 <NavLink href="/">Home</NavLink>
+                <NavLink href="/login">Profile</NavLink>
                 <NavLink href="/introduction">Introduction</NavLink>
                 <NavLink href="/calendar">Calendar</NavLink>
                 <NavLink href="/notes">Notes</NavLink>
@@ -27,6 +29,7 @@ class App extends Component {
           </Navbar>
           <br/>
           <Route path="/" exact component={Insight} />
+          <Route path="/login" exact component={Login} />
           <Route path="/introduction" component={Introduction} />
           <Route path="/calendar" component={Calendar} />
           <Route path="/notes" component={Notes} />
